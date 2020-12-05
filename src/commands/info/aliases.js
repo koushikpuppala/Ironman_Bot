@@ -54,7 +54,7 @@ module.exports = class AliasesCommand extends Command {
 
       embed
         .setTitle(`Alias Type: \`${capitalize(type)}\``)
-        .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Ironman.png')
+        .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Ironman.png')
         .addField(
           `**${emojiMap[type]} [${aliases[type].reduce((a, b) => a + b.split(' ').slice(1).length, 0)}]**`, 
           aliases[type].join('\n')
@@ -81,7 +81,7 @@ module.exports = class AliasesCommand extends Command {
           **Prefix:** \`${prefix}\`
           **More Information:** \`${prefix}aliases [command type]\`
         `)
-        .setImage('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Ironman.png')
+        .setImage('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Ironman.png')
         .setFooter(message.member.displayName, message.author.displayAvatarURL({ dynamic: true }))
         .setTimestamp()
         .setColor(message.guild.me.displayHexColor);
@@ -99,7 +99,8 @@ module.exports = class AliasesCommand extends Command {
       embed.addField(
         '**Links**', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=757514337475756053&scope=bot&permissions=470248574) | ' +
-        '[Support Server](https://discord.gg/SgCABjZ3cy)'
+        '[Support Server](https://discord.gg/SgCABjZ3cy) | ' +
+        '[Repository](https://github.com/koushikpuppala5/Ironman_Bot)**'
       );
 
     }

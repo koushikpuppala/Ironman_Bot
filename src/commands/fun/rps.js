@@ -22,7 +22,7 @@ module.exports = class RockPaperScissorsCommand extends Command {
         const botChoice = Math.floor(Math.random() * 3);
         let result;
         if (userChoice === botChoice) result = 'It\'s a draw!';
-        else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Avenger** wins!';
+        else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Ironman** wins!';
         else result = `**${message.member.displayName}** wins!`;
         const embed = new MessageEmbed()
             .setTitle(`${message.member.displayName} vs. Ironman`)

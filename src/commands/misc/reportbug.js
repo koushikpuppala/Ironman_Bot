@@ -39,7 +39,7 @@ module.exports = class ReportBugCommand extends Command {
         if (report.length > 1024) report = report.slice(0, 1021) + '...';
         const embed = new MessageEmbed()
             .setTitle('Bug Report')
-            .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Eye.png')
+            .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Eye.png')
             .setDescription(oneLine `
         Successfully sent bug report!
         Please join the [Avenger's Support Server](https://discord.gg/SgCABjZ3cy) to further discuss your issue.`)

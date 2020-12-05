@@ -36,7 +36,7 @@ module.exports = class FeedbackCommand extends Command {
         if (feedback.length > 1024) feedback = feedback.slice(0, 1021) + '...';
         const embed = new MessageEmbed()
             .setTitle('Feedback')
-            .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Eye.png')
+            .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Eye.png')
             .setDescription(oneLine `
         Successfully sent feedback!
         Please join the [Avenger's Support Server](https://discord.gg/SgCABjZ3cy) to further discuss your feedback.`)

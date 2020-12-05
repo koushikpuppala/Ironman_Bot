@@ -39,7 +39,7 @@ module.exports = class HelpCommand extends Command {
 
                     embed // Build specific command help embed
                         .setTitle(`Command: \`${command.name}\``)
-                        .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Eye.png')
+                        .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Eye.png')
                         .setDescription(command.description)
                         .addField('Usage',
                             `${prefix}${command.usage}\``, true)
@@ -98,7 +98,7 @@ module.exports = class HelpCommand extends Command {
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTimestamp()
-        .setImage('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Eye.png')
+        .setImage('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Eye.png')
         .setColor(message.guild.me.displayHexColor);
 
       for (const type of Object.values(message.client.types)) {
@@ -110,7 +110,8 @@ module.exports = class HelpCommand extends Command {
       embed.addField(
         '**Links**', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=757514337475756053&scope=bot&permissions=470248574) | ' +
-        '[Support Server](https://discord.gg/SgCABjZ3cy)**'
+        '[Support Server](https://discord.gg/SgCABjZ3cy) | ' +
+        '[Repository](https://github.com/koushikpuppala5/Ironman_Bot)**'
       );
         
     }

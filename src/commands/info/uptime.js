@@ -21,7 +21,7 @@ module.exports = class UptimeCommand extends Command {
         const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
         const embed = new MessageEmbed()
             .setTitle('Ironman\'s Uptime')
-            .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/tree/masters/data/images/Eye.png')
+            .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/Eye.png')
             .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
             .addField('Date Launched', date)
             .setFooter(message.member.displayName, message.author.displayAvatarURL({ dynamic: true }))

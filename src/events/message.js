@@ -58,7 +58,7 @@ module.exports = (client, message) => {
         ) {
             const embed = new MessageEmbed()
                 .setTitle('Hi, I\'m Iron man. Need help?')
-                .setThumbnail('https://github.com/koushikpuppala5/Avenger_Bot_Star/blob/masters/data/images/All.png')
+                .setThumbnail('https://raw.githubusercontent.com/koushikpuppala5/Ironman_Bot/master/data/images/All.png')
                 .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
                 .addField('Invite Me', oneLine `
           You can add me to your server by clicking 
