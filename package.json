@@ -1,5 +1,5 @@
 {
-    "name": "avengers-bot",
+    "name": "ironman",
     "description": "A fully customizable bot built with discord.js",
     "main": "app.js",
     "dependencies": {
