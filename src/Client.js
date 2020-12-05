@@ -5,7 +5,7 @@ const AsciiTable = require('ascii-table');
 const { fail } = require('./utils/emojis.json');
 
 /**
- * Calypso's custom client
+ * Ironman's custom client
  * @extends Discord.Client
  */
 class Client extends Discord.Client {
@@ -16,7 +16,7 @@ class Client extends Discord.Client {
    * @param {ClientOptions} options 
    */
   constructor(config, options = {}) {
-    
+
     super(options);
 
     /**
@@ -75,25 +75,25 @@ class Client extends Discord.Client {
     this.apiKeys = config.apiKeys;
 
     /** 
-     * Calypso's owner ID
+     * Ironman's owner ID
      * @type {string}
      */
     this.ownerId = config.ownerId;
 
     /** 
-     * Calypso's bug report channel ID
+     * Ironman's bug report channel ID
      * @type {string}
      */
     this.bugReportChannelId = config.bugReportChannelId;
 
     /** 
-     * Calypso's feedback channel ID
+     * Ironman's feedback channel ID
      * @type {string}
      */
     this.feedbackChannelId = config.feedbackChannelId;
 
     /** 
-     * Calypso's server log channel ID
+     * Ironman's server log channel ID
      * @type {string}
      */
     this.serverLogId = config.serverLogId;

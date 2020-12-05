@@ -5,9 +5,17 @@ const { success } = require('../utils/emojis.json');
 module.exports = async(client, guild) => {
 
     client.logger.info(`Ironman has joined ${guild.name}`);
-    const serverLog = client.channels.cache.get(client.serverLogId);
+    const serverLog = client.channels.cache.get(client.JoinID);
     if (serverLog)
-        serverLog.send(new MessageEmbed().setDescription(`${client.user} has joined **${guild.name}** ${success}`));
+        serverLog.send(new MessageEmbed()
+            .setTitle(`Ironman joined a new server! ${success} `)
+            .setDescription(guild.name)
+            .setThumbnail(guild.iconURL())
+            .addField("Owner", guild.owner.user.tag)
+            .addField("Member Count", guild.memberCount)
+            .setFooter(guild.id)
+            .setTimestamp()
+        );
 
     /** ------------------------------------------------------------------------------------------------
      * CREATE/FIND SETTINGS
