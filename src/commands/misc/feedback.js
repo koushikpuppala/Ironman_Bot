@@ -8,7 +8,7 @@ module.exports = class FeedbackCommand extends Command {
             name: 'feedback',
             aliases: ['fb'],
             usage: 'feedback <message>',
-            description: 'Sends a message to the Avenger\'s Server feedback channel.',
+            description: 'Sends a message to the Ironman\'s Support Server feedback channel.',
             type: client.types.MISC,
             examples: ['feedback We love Ironman!']
         });

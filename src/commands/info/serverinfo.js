@@ -19,10 +19,10 @@ const region = {
 };
 const verificationLevels = {
   NONE: '`None`',
-  LOW: '`Low`',
+  LOW: '`Low ()`',
   MEDIUM: '`Medium`',
-  HIGH: '`High`',
-  VERY_HIGH: '`Highest`'
+  HIGH: '`(╯°□°）╯︵ ┻━┻`',
+  VERY_HIGH: '`┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻`'
 };
 const notifications = {
   ALL: '`All`',

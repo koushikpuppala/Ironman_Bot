@@ -19,8 +19,8 @@ module.exports = class BotInfoCommand extends Command {
         const prefix = message.client.db.settings.selectPrefix.pluck().get(message.guild.id);
         const tech = stripIndent `
       Version     :: ${pkg.version}
-      Library     :: Discord.js v12.3.1
-      Environment :: Node.js v12.16.3
+      Library     :: Discord.js v12.5.1
+      Environment :: Node.js v14.15.1
       Database    :: SQLite
     `;
         const embed = new MessageEmbed()
@@ -30,7 +30,7 @@ module.exports = class BotInfoCommand extends Command {
         It comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
         It's codebase also serves as a base framework to easily create Discord bots of all kinds.
-        It first went live on **May 23nd, 2020**.
+        It first went live on **Jan 1st, 2021**.
       `)
             .addField('Prefix', `\`${prefix}\``, true)
             .addField('Client ID', `\`${message.client.user.id}\``, true)

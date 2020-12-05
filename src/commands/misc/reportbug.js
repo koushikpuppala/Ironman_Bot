@@ -9,7 +9,7 @@ module.exports = class ReportBugCommand extends Command {
             aliases: ['bugreport', 'report', 'bug', 'rb', 'br'],
             usage: 'reportbug <message>',
             description: oneLine `
-        Sends a message to the Avenger's Server bug report channel.
+        Sends a message to the Ironman's Support Server bug report channel.
         When reporting a bug, please include as much information as possible.
       `,
             type: client.types.MISC,

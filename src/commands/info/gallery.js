@@ -45,7 +45,7 @@ module.exports = class GalleryCommand extends Command {
             name: 'gallery',
             aliases: ['art'],
             usage: 'gallery',
-            description: 'Displays a gallery of Ironman\'s support server\'s arts.',
+            description: 'Displays a gallery of Ironman\'s Support Server\'s arts.',
             type: client.types.INFO,
             clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'ADD_REACTIONS']
         });
