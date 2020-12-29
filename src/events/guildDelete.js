@@ -6,11 +6,11 @@ module.exports = (client, guild) => {
     client.logger.info(`Ironman has left ${guild.name}`);
     const serverLog = client.channels.cache.get(client.LeaveID);
     if (serverLog)serverLog.send(new MessageEmbed()
-        .setTitle("Avenger left a server.")
+        .setTitle(`Ironamn left the server ${fail}`)
         .setDescription(guild.name)
         .setThumbnail(guild.iconURL())
         .setColor(0xFF0000)
-        .addField("Owner", guild.owner ? guild.owner.user.tag : "Failed to fetch owner information.")
+        .addField("Owner", guild.owner.user.tag)
         .addField("Member Count", guild.memberCount)
         .setFooter(guild.id)
         .setTimestamp()

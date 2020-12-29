@@ -9,7 +9,7 @@ module.exports = class AvatarCommand extends Command {
       usage: 'avatar [user mention/ID]',
       description: 'Displays a user\'s avatar (or your own, if no user is mentioned).',
       type: client.types.INFO,
-      examples: ['avatar @🌠┊𝑃𝑜𝑤𝑒𝑟𝑠𝑡𝑎𝑟™#4121']
+      examples: ['avatar @🌠┊𝑃𝑜𝑤𝑒𝑟𝑠𝑡𝑎𝑟™#0001']
     });
   }
   run(message, args) {

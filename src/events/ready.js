@@ -1,12 +1,12 @@
 module.exports = async(client) => {
 
     const activities = [
-        { name: 'your commands', type: 'LISTENING' },
-        { name: `@${client.user.tag}`, type: 'LISTENING' }
+        { name: `${client.guilds.cache.size} Servers | ${client.users.cache.size} users`, type: 'LISTENING' },
+        { name: `@${client.user.tag} to help you`, type: 'LISTENING' }
     ];
 
     // Update presence
-    client.user.setPresence({ status: 'online', activity: activities[0] });
+    client.user.setPresence({ status: 'IDLE', activity: activities[0] });
 
     let activity = 1;
 
