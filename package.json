@@ -2,7 +2,11 @@
     "name": "ironman",
     "description": "A fully customizable bot built with discord.js",
     "main": "app.js",
+    "engines": {
+      "node": ">=14.0.0"
+    },
     "dependencies": {
+        "express": "^4.17.1",
         "ascii-table": "^0.0.9",
         "better-sqlite3": "^7.1.1",
         "common-tags": "^1.8.0",
