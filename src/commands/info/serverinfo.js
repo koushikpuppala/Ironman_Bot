@@ -81,7 +81,7 @@ module.exports = class ServerInfoCommand extends Command {
       .setTitle(`${message.guild.name}'s Information`)
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
       .addField('ID', `\`${message.guild.id}\``, true)
-      .addField('Region', region[message.guild.region], true)
+      .addField('Region', message.guild.region, true)
       .addField(`Owner ${owner}`, message.guild.owner, true)
       .addField('Verification Level', verificationLevels[message.guild.verificationLevel], true)
       .addField('Rules Channel', 
