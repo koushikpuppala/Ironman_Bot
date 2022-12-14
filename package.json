@@ -6,7 +6,7 @@
       "node": ">=14.0.0"
     },
     "dependencies": {
-      "express": "^4.17.1",
+      "express": "^4.17.3",
       "ascii-table": "^0.0.9",
       "better-sqlite3": "^7.1.2",
       "common-tags": "^1.8.0",
